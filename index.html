@@ -67,9 +67,32 @@
             margin: 0;
             font-size: 16px;
         }
+
+        /* New styles for the back arrow */
+        .back-link {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            display: flex;
+            align-items: center;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .back-link img {
+            width: 20px;
+            height: 20px;
+            margin-right: 5px;
+        }
     </style>
 </head>
 <body>
+    <a class="back-link" href="https://keithfedlol.github.io">
+        <img src="left-arrow.png" alt="Back Arrow">
+        Back to About Me
+    </a>
+    
     <div class="header">
         <img src="logo.png" alt="Website Logo">
         <h1>Games I Play & About Me</h1>
