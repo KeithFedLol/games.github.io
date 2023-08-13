@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Games I Play</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #000000;
+            font-family: "Segoe UI", Arial, sans-serif;
+        }
+
+        .header {
+            text-align: center;
+            padding: 20px;
+            background-color: #000000;
+            color: white;
+        }
+
+        .header p {
+            font-weight: bold;
+            font-size: 24px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 20px;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .box-container {
+            text-decoration: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        .box {
+            background-color: rgb(255, 255, 255);
+            border-radius: 10px;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .box-container:hover .box {
+            transform: scale(1.05);
+            box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .box img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .box h3 {
+            margin: 0;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="logo.png" alt="Website Logo">
+        <h1>Games I Play & About Me</h1>
+        <p><strong>Hello, this website is about the games I usually play.</strong></p>
+    </div>
+    
+    <div class="grid">
+        <a class="box-container" href="https://www.roblox.com/" target="_blank">
+            <div class="box">
+                <img src="image1.png" alt="Game 1">
+                <h3>Roblox</h3>
+            </div>
+        </a>
+        <a class="box-container" href="https://playvalorant.com/" target="_blank">
+            <div class="box">
+                <img src="image2.png" alt="Game 2">
+                <h3>VALORANT</h3>
+            </div>
+        </a>
+        <a class="box-container" href="https://store.steampowered.com/app/960090/Bloons_TD_6/" target="_blank">
+            <div class="box">
+                <img src="image3.png" alt="Game 3">
+                <h3>BTD 6</h3>
+            </div>
+        </a>
+        <a class="box-container" href="https://store.steampowered.com/app/730/CounterStrike_Global_Offensive/" target="_blank">
+            <div class="box">
+                <img src="image4.png" alt="Game 4">
+                <h3>CSGO</h3>
+            </div>
+        </a>
+        <a class="box-container" href="https://www.teamfortress.com/" target="_blank">
+            <div class="box">
+                <img src="image5.png" alt="Game 5">
+                <h3>TF2</h3>
+            </div>
+        </a>
+    </div>
+</body>
+</html>
